@@ -77,3 +77,56 @@ hr{
     color: blue;
     font-size: 16px;
 }
+/* ----------------------
+Courses Styles
+-------------------------- */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+.course .course-banner img{
+    width: 224px;
+    height:104px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: gold;
+}
+.fa-star.empty{
+    color: lightgray;
+}
+.course-duration{
+    background-color: lightpink;
+    border-radius: 20px;
+    padding: 4px;
+    color:purple;
+}
+/*-----------------
+ Media Queries
+ ----------------- */
+
+ /* Mobile Devices */
+ @media only screen and (max-width: 688px) {
+     .players, .blogs{
+         background-color: salmon;
+         grid-template-columns: repeat(1, 1fr);
+         align-items: center;
+     }
+     .blog{
+         flex-direction: column;
+     }
+     .player{
+         flex-direction: column;
+     }
+     .courses{
+         display:;
+     }
+ }
